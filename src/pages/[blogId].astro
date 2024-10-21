@@ -42,11 +42,17 @@ const blog = await getBlogDetail(blogId as string);
       <div class="post" set:html={blog.content} />
     </main>
     <Footer />
-    <style>
+    <style lang="scss">
       main {
         margin: auto;
         padding: 1em;
         max-width: 60ch;
+        Image {
+          width: 800px;
+        }
+        .publishedAt {
+          color: red;
+        }
       }
     </style>
   </body>
